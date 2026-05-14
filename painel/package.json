@@ -1,0 +1,9 @@
+{
+  "name": "induspainel",
+  "version": "1.2.0",
+  "description": "Sistema Industrial Darvig Molas",
+  "scripts": {
+    "dev": "npx serve . -l 3000",
+    "start": "npx serve . -l 3000"
+  }
+}
