@@ -1,338 +1,120 @@
-<!DOCTYPE html>
 
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Darvig Molas</title>
-<link href="assets/img/favicon.png" rel="icon" type="image/png"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="assets/css/landing.css" rel="stylesheet"/>
-<script src="assets/js/landing.js"></script>
-<link href="assets/css/landing.css" rel="stylesheet"/>
-<link href="assets/css/landing.css" rel="stylesheet"/>
-</head>
-<body class="bg-background text-on-background antialiased font-body-md text-body-md">
-<!-- TopNavBar -->
-<header class="bg-surface border-b border-outline-variant fixed top-0 w-full z-50">
-<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-<div class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight"><img alt="Darvig Molas Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm3lsbcM48AKH7hcRWf-7qfsSsuKd5-Mhf4p9gdkKNjw1vTrQrM3sBHBPA2Uu0sXJSPpjjvHxHbjElw1BKmaHrYga7FEfYhJDJnpyEHZviwKTadKdNTCkq13-vSkCVGbGW67jALMeXeb2E7yr_CZYZHeTwaargs6uZok7H8peRJ-8DDcbVQAusxaxkUs60sFWEWow7ngdWFMMDWXmbnud92WMyJdOnzR5Uc5WKTJP4E7qDA3uvvi7bG_CtJWauB3ISdfoB2YpyfvVf"/>
-</div>
-<!-- Desktop Links -->
-<div class="hidden md:flex gap-8 items-center">
-<a class="nav-link active text-primary font-body-md text-body-md" href="index.html">Início</a>
-<a class="nav-link text-secondary hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="produtos.html">Produtos</a>
-<a class="nav-link text-secondary hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="index.html#sobre">Sobre</a>
-<a class="nav-link text-secondary hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="index.html#contato">Contato</a>
-<a class="btn-premium bg-primary text-on-primary px-6 py-2 rounded-lg font-button text-button transition-all flex items-center gap-2" href="https://wa.me/551144524008" target="_blank">
-<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
-                    WhatsApp
-                </a>
-</div>
-<!-- Mobile Menu Toggle -->
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</nav>
-</header>
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative pt-20 pb-32 px-margin-mobile md:px-margin-desktop overflow-hidden border-b border-surface-variant" id="inicio">
-<!-- Background Image -->
-<div class="absolute inset-0 z-0">
-<img alt="Industrial precision manufacturing" class="w-full h-full object-cover opacity-20" data-alt="A highly detailed close-up shot of precision industrial machinery manufacturing metal springs in a pristine, modern factory environment. The lighting is bright and technical, emphasizing the gleaming metallic surfaces and precise geometric lines of the equipment. Warm primary orange accents softly reflect off the steel, creating a clean, professional, and reliable mood consistent with a high-end engineering brand. Depth of field is shallow, focusing intensely on the coiled metal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBixwHn33tGu3aHJ3qMP4v2V4Bmmh8R4BN_IvmsX7WvaPjQlRm9yVXQmIFTh3G6BzX4vMQaGUZvjXklZeFWcj9CwiBPWwMusJ4MvCwKCRcUExnInYAKXTw-aP95L0PDTDj3XCiKPI55gXfCiNByOppUNGSy2lJNClcLtt8gfcqi04co_0VaEeKLmuOwrh-H2tdOsTW-S27_KrvmNWy6RSr2Jk0CJsTVzC6smE8QIdghc6ckoXz4ERivk8X9HEW6rhTSq9HZrGonz-Hl"/>
-<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/90 to-surface/40"></div>
-</div>
-<div class="relative z-10 max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
-<div class="max-w-2xl">
-<span class="inline-block px-3 py-1 bg-surface-container-high border border-outline-variant rounded font-label-caps text-label-caps text-secondary mb-6 tracking-widest uppercase transition-all duration-300 hover:scale-105 hover:bg-surface-container-highest hover:shadow-sm">Tradição
-                        &amp; Qualidade</span>
-<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-6 text-left text-balance">
-                        Fabricação de Molas e Artefatos de Arame sob Medida
-                    </h1>
-<p class="font-body-lg text-body-lg text-secondary mb-10 text-left max-w-xl">
-                        Desde 1984, a Darvig Molas desenvolve soluções industriais conforme desenhos, amostras ou
-                        especificações técnicas, com qualidade, precisão e atendimento especializado.
-                    </p>
-<div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-<a class="btn-premium inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary-container font-button text-button px-6 py-4 rounded-lg shadow-sm hover:bg-primary hover:text-on-primary transition-all border border-outline-variant w-full sm:w-auto" href="https://wa.me/551144524008" rel="noopener noreferrer" target="_blank">
-<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
-                            Chamar no WhatsApp
-                        </a>
-<p class="font-body-md text-body-md text-secondary max-w-[250px] text-sm">
-                            Envie seu desenho, amostra ou especificação e solicite um orçamento.
-                        </p>
-</div>
-</div>
-</div>
-</section>
-<!-- Authority Section -->
-<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="sobre">
-<div class="max-w-container-max mx-auto">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
-<div class="lg:col-span-5 mb-12 lg:mb-0">
-<div class="sticky top-32">
-<h2 class="font-headline-md text-headline-md text-on-background mb-6">
-                                Mais de 40 anos atendendo a indústria brasileira
-                            </h2>
-<p class="font-body-lg text-body-lg text-secondary border-l-2 border-primary-container pl-4">
-                                A Darvig Molas atua desde 1984 no desenvolvimento e fabricação de molas e artefatos de
-                                arame, atendendo empresas que buscam qualidade, agilidade e produtos feitos sob medida.
-                            </p>
-</div>
-</div>
-<div class="lg:col-span-7">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<!-- Bento Grid Cards -->
-<div class="bg-surface p-6 rounded-lg border border-surface-variant hover:border-outline-variant transition-colors shadow-sm">
-<span class="material-symbols-outlined text-primary-container mb-4 text-3xl" data-icon="straighten" style="font-variation-settings: 'FILL' 1;">straighten</span>
-<h3 class="font-headline-sm text-headline-sm text-on-background text-lg mb-2">Fabricação
-                                    sob medida</h3>
-</div>
-<div class="bg-surface p-6 rounded-lg border border-surface-variant hover:border-outline-variant transition-colors shadow-sm">
-<span class="material-symbols-outlined text-primary-container mb-4 text-3xl" data-icon="engineering" style="font-variation-settings: 'FILL' 1;">engineering</span>
-<h3 class="font-headline-sm text-headline-sm text-on-background text-lg mb-2">
-                                    Atendimento técnico especializado</h3>
-</div>
-<div class="bg-surface p-6 rounded-lg border border-surface-variant hover:border-outline-variant transition-colors shadow-sm">
-<span class="material-symbols-outlined text-primary-container mb-4 text-3xl" data-icon="architecture" style="font-variation-settings: 'FILL' 1;">architecture</span>
-<h3 class="font-headline-sm text-headline-sm text-on-background text-lg mb-2">Produção
-                                    conforme desenho ou amostra</h3>
-</div>
-<div class="bg-surface p-6 rounded-lg border border-surface-variant hover:border-outline-variant transition-colors shadow-sm">
-<span class="material-symbols-outlined text-primary-container mb-4 text-3xl" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
-<h3 class="font-headline-sm text-headline-sm text-on-background text-lg mb-2">Materiais
-                                    de qualidade</h3>
-</div>
-<div class="bg-surface p-6 rounded-lg border border-surface-variant hover:border-outline-variant transition-colors shadow-sm">
-<span class="material-symbols-outlined text-primary-container mb-4 text-3xl" data-icon="history" style="font-variation-settings: 'FILL' 1;">history</span>
-<h3 class="font-headline-sm text-headline-sm text-on-background text-lg mb-2">
-                                    Experiência desde 1984</h3>
-</div>
-<div class="bg-surface p-6 rounded-lg border border-surface-variant hover:border-outline-variant transition-colors shadow-sm">
-<span class="material-symbols-outlined text-primary-container mb-4 text-3xl" data-icon="timer" style="font-variation-settings: 'FILL' 1;">timer</span>
-<h3 class="font-headline-sm text-headline-sm text-on-background text-lg mb-2">
-                                    Compromisso com prazos</h3>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Products Section -->
-<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface border-y border-surface-variant" id="produtos">
-<div class="max-w-container-max mx-auto">
-<div class="text-center mb-16">
-<h2 class="font-headline-md text-headline-md text-on-background mb-4">Tipos de produtos que
-                        fabricamos</h2>
-<p class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Precisão
-                        Geométrica em cada peça</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-12">
-<!-- Product Card 1 -->
-<div class="group bg-surface-container-lowest p-8 rounded-lg border border-surface-variant hover:border-primary-container transition-all hover:shadow-md h-full flex flex-col">
-<div class="w-12 h-12 bg-surface-container rounded flex items-center justify-center mb-6 border border-surface-variant group-hover:bg-primary-container group-hover:border-primary transition-colors">
-<span class="material-symbols-outlined text-secondary group-hover:text-on-primary-container" data-icon="sync_alt">sync_alt</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-background text-xl mb-4">Molas de Tração
-                        </h3>
-<p class="font-body-md text-body-md text-secondary flex-grow">Indicadas para aplicações que
-                            exigem resistência ao alongamento e retorno controlado.</p>
-</div>
-<!-- Product Card 2 -->
-<div class="group bg-surface-container-lowest p-8 rounded-lg border border-surface-variant hover:border-primary-container transition-all hover:shadow-md h-full flex flex-col">
-<div class="w-12 h-12 bg-surface-container rounded flex items-center justify-center mb-6 border border-surface-variant group-hover:bg-primary-container group-hover:border-primary transition-colors">
-<span class="material-symbols-outlined text-secondary group-hover:text-on-primary-container" data-icon="cyclone">cyclone</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-background text-xl mb-4">Molas de Torção
-                        </h3>
-<p class="font-body-md text-body-md text-secondary flex-grow">Desenvolvidas para sistemas que
-                            necessitam de força rotacional e precisão no movimento.</p>
-</div>
-<!-- Product Card 3 -->
-<div class="group bg-surface-container-lowest p-8 rounded-lg border border-surface-variant hover:border-primary-container transition-all hover:shadow-md h-full flex flex-col">
-<div class="w-12 h-12 bg-surface-container rounded flex items-center justify-center mb-6 border border-surface-variant group-hover:bg-primary-container group-hover:border-primary transition-colors">
-<span class="material-symbols-outlined text-secondary group-hover:text-on-primary-container" data-icon="compress">compress</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-background text-xl mb-4">Molas de
-                            Compressão</h3>
-<p class="font-body-md text-body-md text-secondary flex-grow">Produzidas em formatos
-                            cilíndricos, cônicos ou bicônicos, conforme a necessidade do projeto.</p>
-</div>
-<!-- Product Card 4 -->
-<div class="group bg-surface-container-lowest p-8 rounded-lg border border-surface-variant hover:border-primary-container transition-all hover:shadow-md h-full flex flex-col">
-<div class="w-12 h-12 bg-surface-container rounded flex items-center justify-center mb-6 border border-surface-variant group-hover:bg-primary-container group-hover:border-primary transition-colors">
-<span class="material-symbols-outlined text-secondary group-hover:text-on-primary-container" data-icon="category">category</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-background text-xl mb-4">Aramados e
-                            Artefatos de Arame</h3>
-<p class="font-body-md text-body-md text-secondary flex-grow">Produzimos hastes, alças, ganchos,
-                            presilhas, anéis, pinos, travas e outros artefatos de arame.</p>
-</div>
-</div>
-<div class="bg-surface-container-low p-4 rounded-lg border border-surface-variant text-center">
-<p class="font-label-caps text-label-caps text-secondary"><span class="material-symbols-outlined text-sm align-middle mr-1" data-icon="info">info</span>
-                        Produzimos conforme desenho, amostra ou especificação técnica.</p>
-</div>
-</div>
-</section>
-<!-- Process Section -->
-<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
-<div class="max-w-container-max mx-auto">
-<h2 class="font-headline-md text-headline-md text-on-background mb-16 text-center">Como solicitar seu
-                    orçamento</h2>
-<div class="relative">
-<!-- Connecting line for desktop -->
-<div class="hidden md:block absolute top-1/2 left-0 w-full h-px bg-surface-variant -translate-y-1/2 z-0">
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
-<!-- Step 1 -->
-<div class="bg-surface-container-lowest p-6 text-center border md:border-none border-surface-variant rounded-lg md:rounded-none">
-<div class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-primary-container text-primary-container font-headline-sm text-headline-sm bg-surface-container-lowest">
-                                1
-                            </div>
-<h3 class="font-headline-sm text-headline-sm text-on-background text-xl mb-4">Envie sua
-                                necessidade</h3>
-<p class="font-body-md text-body-md text-secondary">Fale conosco pelo WhatsApp e envie
-                                desenho, amostra, medidas ou especificações.</p>
-</div>
-<!-- Step 2 -->
-<div class="bg-surface-container-lowest p-6 text-center border md:border-none border-surface-variant rounded-lg md:rounded-none">
-<div class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-primary-container text-primary-container font-headline-sm text-headline-sm bg-surface-container-lowest">
-                                2
-                            </div>
-<h3 class="font-headline-sm text-headline-sm text-on-background text-xl mb-4">Análise
-                                técnica</h3>
-<p class="font-body-md text-body-md text-secondary">Nossa equipe avalia o projeto e indica a
-                                melhor solução para sua aplicação.</p>
-</div>
-<!-- Step 3 -->
-<div class="bg-surface-container-lowest p-6 text-center border md:border-none border-surface-variant rounded-lg md:rounded-none">
-<div class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-primary-container text-primary-container font-headline-sm text-headline-sm bg-surface-container-lowest">
-                                3
-                            </div>
-<h3 class="font-headline-sm text-headline-sm text-on-background text-xl mb-4">Produção sob
-                                medida</h3>
-<p class="font-body-md text-body-md text-secondary">Fabricamos as peças com foco em
-                                qualidade, precisão e confiabilidade.</p>
-</div>
-</div>
-</div>
-<div class="mt-16 text-center">
-<a class="btn-premium inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary-container font-button text-button px-8 py-4 rounded-lg shadow-sm hover:bg-primary hover:text-on-primary transition-all border border-outline-variant" href="#contato">
-                        Solicitar orçamento agora
-                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
-</a>
-</div>
-</div>
-</section>
-<!-- Contact Section -->
-<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface border-t border-surface-variant" id="contato">
-<div class="max-w-container-max mx-auto">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-<!-- Contact Info -->
-<div class="">
-<h2 class="font-headline-md text-headline-md text-on-background mb-8">Fale com a Darvig Molas
-                        </h2>
-<div class="space-y-8 mb-12">
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary-container mt-1" data-icon="call" style="font-variation-settings: 'FILL' 1;">call</span>
-<div>
-<h4 class="font-label-caps text-label-caps text-secondary uppercase mb-1">WhatsApp /
-                                        Telefone</h4>
-<p class="font-body-lg text-body-lg text-on-background font-medium">(11) 4452-4008
-                                    </p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary-container mt-1" data-icon="mail" style="font-variation-settings: 'FILL' 1;">mail</span>
-<div>
-<h4 class="font-label-caps text-label-caps text-secondary uppercase mb-1">E-mail
-                                    </h4>
-<p class="font-body-lg text-body-lg text-on-background font-medium">
-                                        vendas@darvigmolas.com.br</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary-container mt-1" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
-<div>
-<h4 class="font-label-caps text-label-caps text-secondary uppercase mb-1">Endereço
-                                    </h4>
-<p class="font-body-lg text-body-lg text-on-background font-medium">Estrada do
-                                        Pedroso, 396<br/>Vila Luzita - Santo André - SP<br/>CEP 09132-180</p>
-</div>
-</div>
-</div>
-<a class="btn-whatsapp-custom inline-flex items-center justify-center gap-2 bg-surface font-button text-button px-6 py-4 rounded-lg border w-full sm:w-auto shadow-sm" href="https://wa.me/551144524008" rel="noopener noreferrer" target="_blank">
-<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
-                            Atendimento via WhatsApp
-                        </a>
-</div>
-<!-- Contact Form -->
-<div class="bg-surface-container-lowest p-8 rounded-lg border border-surface-variant shadow-sm">
-<form class="space-y-6">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-<div class="space-y-2">
-<label class="block font-label-caps text-label-caps text-secondary" for="nome">Nome</label>
-<input class="w-full bg-surface-container-lowest border border-surface-variant rounded px-4 py-3 focus:ring-2 focus:ring-primary-container focus:border-primary-container transition-all outline-none font-body-md text-body-md" id="nome" name="nome" required="" type="text"/>
-</div>
-<div class="space-y-2">
-<label class="block font-label-caps text-label-caps text-secondary" for="empresa">Empresa</label>
-<input class="w-full bg-surface-container-lowest border border-surface-variant rounded px-4 py-3 focus:ring-2 focus:ring-primary-container focus:border-primary-container transition-all outline-none font-body-md text-body-md" id="empresa" name="empresa" type="text"/>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-<div class="space-y-2">
-<label class="block font-label-caps text-label-caps text-secondary" for="telefone">Telefone / WhatsApp</label>
-<input class="w-full bg-surface-container-lowest border border-surface-variant rounded px-4 py-3 focus:ring-2 focus:ring-primary-container focus:border-primary-container transition-all outline-none font-body-md text-body-md" id="telefone" name="telefone" required="" type="tel"/>
-</div>
-<div class="space-y-2">
-<label class="block font-label-caps text-label-caps text-secondary" for="email">E-mail</label>
-<input class="w-full bg-surface-container-lowest border border-surface-variant rounded px-4 py-3 focus:ring-2 focus:ring-primary-container focus:border-primary-container transition-all outline-none font-body-md text-body-md" id="email" name="email" required="" type="email"/>
-</div>
-</div>
-<div class="space-y-2">
-<label class="block font-label-caps text-label-caps text-secondary" for="mensagem">Mensagem</label>
-<textarea class="w-full bg-surface-container-lowest border border-surface-variant rounded px-4 py-3 focus:ring-2 focus:ring-primary-container focus:border-primary-container transition-all outline-none font-body-md text-body-md resize-none" id="mensagem" name="mensagem" required="" rows="4"></textarea>
-</div>
-<button class="btn-premium w-full bg-primary-container text-on-primary-container font-button text-button px-6 py-4 rounded-lg shadow-sm hover:bg-primary hover:text-on-primary transition-all border border-outline-variant flex justify-center items-center gap-2" type="submit">
-<span class="material-symbols-outlined" data-icon="send">send</span>
-                                Enviar solicitação
-                            </button>
-</form>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant dark:border-outline flat no shadows full-width">
-<div class="w-full py-12 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-gutter">
-<!-- Brand & Info -->
-<div class="max-w-sm">
-<div class="font-headline-sm text-headline-sm font-bold mb-4 flex items-center gap-2 text-on-surface">
-<img alt="Darvig Molas Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYju2qf-ePIBKNtcXbsdVcGwGM7w-JTZy0b1nNYBGKsiRR3Ptk11F8CQgGHwNmqs-jTzacwAdqMTVPq3mtF9DObbbNg2wmoXFD2YSWDojgve2ahkkr32w21JLLp5DBDgE8dpynFr2dBIC5RidWt-13bIK-RjI-RmNv286pohUXt6948UydQ74-Uuc12hK7ojDJOSPZJVB9BsQtSl32zZE5AATqnSalHR1NIiZ-z1MW8Rcg3gQWN8Tyd_Dpnc0m0JDsCLNZosRWCE0B"/>
-                    Darvig Molas
-                </div>
-<p class="font-body-md text-body-md text-secondary mb-4 text-sm">
-                    © 2026 Darvig Molas - Fabricação de Molas e Artefatos de Arame.<br/>
-                    CNPJ: 57.046.971/0001-90<br/>
-                    I.E.: 626.162.918.117
-                </p>
-</div>
-<!-- Links -->
-<div class="flex flex-wrap gap-x-8 gap-y-4">
-<a class="footer-link-interactive text-on-secondary-container dark:text-secondary-fixed-dim transition-all focus:ring-2 focus:ring-primary font-button text-button" href="#inicio">Início</a>
-<a class="footer-link-interactive text-on-secondary-container dark:text-secondary-fixed-dim transition-all focus:ring-2 focus:ring-primary font-button text-button" href="produtos.html">Produtos</a>
-<a class="footer-link-interactive text-on-secondary-container dark:text-secondary-fixed-dim transition-all focus:ring-2 focus:ring-primary font-button text-button" href="#sobre">Sobre</a>
-<a class="footer-link-interactive text-on-secondary-container dark:text-secondary-fixed-dim transition-all focus:ring-2 focus:ring-primary font-button text-button" href="#contato">Contato</a>
-<a class="footer-link-interactive text-on-secondary-container dark:text-secondary-fixed-dim transition-all focus:ring-2 focus:ring-primary font-button text-button" href="#">Privacidade</a>
-</div>
-</div>
-</footer>
-<script src="assets/js/landing.js"></script>
-</body>
-</html>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#5d6466",
+                        "primary-fixed-dim": "#ffb785",
+                        "tertiary-container": "#9ea166",
+                        "outline": "#8a7264",
+                        "background": "#f7faf9",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#dae1e3",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#c1c8ca",
+                        "surface-bright": "#f7faf9",
+                        "on-background": "#181c1c",
+                        "surface-container": "#ebeeed",
+                        "tertiary-fixed": "#e4e7a6",
+                        "on-secondary-fixed": "#161d1f",
+                        "surface": "#f7faf9",
+                        "inverse-surface": "#2d3131",
+                        "tertiary": "#5f622e",
+                        "surface-container-highest": "#e0e3e2",
+                        "on-surface-variant": "#564336",
+                        "on-surface": "#181c1c",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e0e3e2",
+                        "on-primary-fixed": "#301400",
+                        "surface-container-high": "#e6e9e8",
+                        "surface-dim": "#d7dbda",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#954a00",
+                        "on-tertiary-container": "#343707",
+                        "primary-fixed": "#ffdcc6",
+                        "on-tertiary-fixed-variant": "#474a18",
+                        "inverse-primary": "#ffb785",
+                        "surface-container-low": "#f1f4f3",
+                        "primary": "#954a00",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#41484a",
+                        "on-tertiary-fixed": "#1b1d00",
+                        "secondary": "#586062",
+                        "outline-variant": "#ddc1b0",
+                        "tertiary-fixed-dim": "#c8cb8c",
+                        "on-primary-container": "#ffffff",
+                        "surface-tint": "#954a00",
+                        "secondary-fixed": "#dde4e6",
+                        "inverse-on-surface": "#eef1f0",
+                        "on-primary-fixed-variant": "#713700",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "margin-desktop": "48px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["JetBrains Mono"],
+                        "headline-md": ["Metropolis"],
+                        "body-lg": ["Inter"],
+                        "headline-sm": ["Metropolis"],
+                        "display-lg": ["Metropolis"],
+                        "body-md": ["Inter"],
+                        "display-lg-mobile": ["Metropolis"],
+                        "button": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "button": ["14px", { "lineHeight": "20px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    
+;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Apply fade-in on load
+            setTimeout(() => {
+                document.body.classList.add('page-fade-in');
+            }, 50);
+
+            // Handle internal link clicks for fade-out
+            document.addEventListener('click', (e) => {
+                const link = e.target.closest('a');
+                if (!link) return;
+
+                const href = link.getAttribute('href');
+                const target = link.getAttribute('target');
+
+                // Filter for internal pages (e.g. .html or relative paths) but exclude anchors and external links
+                if (href && (href.includes('.html') || href.startsWith('/') || href.startsWith('./')) && 
+                    !href.startsWith('#') && target !== '_blank' && !href.startsWith('mailto:') && !href.startsWith('tel:')) {
+                    
+                    e.preventDefault();
+                    document.body.classList.add('page-fade-out');
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 400);
+                }
+            });
+        });
+    
