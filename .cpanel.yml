@@ -8,3 +8,4 @@ deployment:
     - /bin/cp .htaccess "$DEPLOYPATH"
     - /bin/cp -R assets "$DEPLOYPATH"
     - /bin/cp -R painel "$DEPLOYPATH"
+    - /bin/cp .htaccess "$DEPLOYPATH"
