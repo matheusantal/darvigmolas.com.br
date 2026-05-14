@@ -1,1 +1,15 @@
-
+---
+deployment:
+  tasks:
+    # define o diretório de deploy
+    - export DEPLOYPATH=/home/darvigmolascom/public_html
+    # copia as páginas principais
+    - /bin/cp index.html "$DEPLOYPATH"
+    - /bin/cp landing.html "$DEPLOYPATH"
+    - /bin/cp produtos.html "$DEPLOYPATH"
+    # copia o conteúdo da pasta de assets (CSS/JS)
+    - /bin/cp -R assets "$DEPLOYPATH"
+    # copia o painel
+    - /bin/cp -R painel "$DEPLOYPATH"
+    # copia o README (opcional)
+    - /bin/cp README.txt "$DEPLOYPATH"
