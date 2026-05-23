@@ -91,6 +91,7 @@
     
 ;
 
+
         document.addEventListener('DOMContentLoaded', () => {
             // Apply fade-in on load
             setTimeout(() => {
@@ -114,6 +115,116 @@
                     setTimeout(() => {
                         window.location.href = href;
                     }, 400);
+                }
+            });
+
+            // ==============================
+            // Contact Form Submission
+            // ==============================
+            const supabaseUrl = window.DarvigConfig?.SUPABASE_URL || 'https://mfygixyrefykhfafisif.supabase.co';
+            const EDGE_FUNCTION_URL = `${supabaseUrl}/functions/v1/enviar-contato`;
+
+            const form = document.getElementById('formContato');
+            if (!form) return;
+
+            const btnEnviar = document.getElementById('btnEnviar');
+            const btnTexto = document.getElementById('btnTexto');
+            const btnIcon = document.getElementById('btnIcon');
+            const feedback = document.getElementById('formFeedback');
+
+            function showFeedback(message, type) {
+                feedback.textContent = message;
+                feedback.classList.remove('hidden', 'bg-green-50', 'text-green-800', 'border-green-200',
+                    'bg-red-50', 'text-red-800', 'border-red-200');
+                if (type === 'success') {
+                    feedback.classList.add('bg-green-50', 'text-green-800', 'border', 'border-green-200');
+                } else {
+                    feedback.classList.add('bg-red-50', 'text-red-800', 'border', 'border-red-200');
+                }
+            }
+
+            function setLoading(loading) {
+                if (loading) {
+                    btnEnviar.disabled = true;
+                    btnEnviar.classList.add('opacity-70', 'cursor-not-allowed');
+                    btnTexto.textContent = 'Enviando...';
+                    btnIcon.textContent = 'hourglass_empty';
+                    btnIcon.classList.add('animate-spin');
+                } else {
+                    btnEnviar.disabled = false;
+                    btnEnviar.classList.remove('opacity-70', 'cursor-not-allowed');
+                    btnTexto.textContent = 'Enviar solicitação';
+                    btnIcon.textContent = 'send';
+                    btnIcon.classList.remove('animate-spin');
+                }
+            }
+
+            let isSubmitting = false;
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+
+                if (isSubmitting) return;
+                isSubmitting = true;
+
+                // Hide previous feedback
+                feedback.classList.add('hidden');
+
+                // Collect form data
+                const nome = (document.getElementById('nome').value || '').trim();
+                const email = (document.getElementById('email').value || '').trim();
+                const telefone = (document.getElementById('telefone').value || '').trim();
+                const empresa = (document.getElementById('empresa').value || '').trim();
+                const produto = (document.getElementById('produto')?.value || '').trim();
+                const mensagem = (document.getElementById('mensagem').value || '').trim();
+
+                // Client-side validation
+                if (!nome || !telefone || !email) {
+                    showFeedback('Por favor, preencha os campos obrigatórios: Nome, Telefone e E-mail.', 'error');
+                    isSubmitting = false;
+                    return;
+                }
+
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    showFeedback('Por favor, informe um e-mail válido.', 'error');
+                    isSubmitting = false;
+                    return;
+                }
+
+                setLoading(true);
+
+                try {
+                    const response = await fetch(EDGE_FUNCTION_URL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            nome,
+                            email,
+                            telefone,
+                            empresa,
+                            produto,
+                            mensagem,
+                        }),
+                    });
+
+                    const data = await response.json();
+
+                    if (response.ok && data.success) {
+                        showFeedback('Mensagem enviada com sucesso! Em breve entraremos em contato.', 'success');
+                        form.reset();
+                    } else {
+                        const errorMsg = data.error || 'Erro desconhecido.';
+                        showFeedback(errorMsg, 'error');
+                    }
+                } catch (err) {
+                    console.error('Erro ao enviar formulário:', err);
+                    showFeedback('Não foi possível enviar sua mensagem. Tente novamente ou chame no WhatsApp.', 'error');
+                } finally {
+                    setLoading(false);
+                    isSubmitting = false;
                 }
             });
         });
