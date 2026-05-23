@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Metropolis:wght@600;700&amp;family=JetBrains+Mono:wght@600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/config.js"></script>
 <script src="assets/js/produtos.js"></script>
 <link href="assets/css/produtos.css" rel="stylesheet"/>
 <link href="assets/css/produtos.css" rel="stylesheet"/><link href="assets/css/produtos.css" rel="stylesheet"/><link href="assets/css/produtos.css" rel="stylesheet"/><link href="assets/css/produtos.css" rel="stylesheet"/><link href="assets/css/produtos.css" rel="stylesheet"/><link href="assets/css/produtos.css" rel="stylesheet"/></link></head>
@@ -15,7 +16,7 @@
 <!-- TopNavBar -->
 <header class="bg-surface border-b border-outline-variant fixed top-0 w-full z-50">
 <nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-<div class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight"><img alt="Darvig Molas Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm3lsbcM48AKH7hcRWf-7qfsSsuKd5-Mhf4p9gdkKNjw1vTrQrM3sBHBPA2Uu0sXJSPpjjvHxHbjElw1BKmaHrYga7FEfYhJDJnpyEHZviwKTadKdNTCkq13-vSkCVGbGW67jALMeXeb2E7yr_CZYZHeTwaargs6uZok7H8peRJ-8DDcbVQAusxaxkUs60sFWEWow7ngdWFMMDWXmbnud92WMyJdOnzR5Uc5WKTJP4E7qDA3uvvi7bG_CtJWauB3ISdfoB2YpyfvVf"/></div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight"><img alt="Darvig Molas Logo" class="h-12 w-auto object-contain transition-transform duration-300 hover:-translate-y-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm3lsbcM48AKH7hcRWf-7qfsSsuKd5-Mhf4p9gdkKNjw1vTrQrM3sBHBPA2Uu0sXJSPpjjvHxHbjElw1BKmaHrYga7FEfYhJDJnpyEHZviwKTadKdNTCkq13-vSkCVGbGW67jALMeXeb2E7yr_CZYZHeTwaargs6uZok7H8peRJ-8DDcbVQAusxaxkUs60sFWEWow7ngdWFMMDWXmbnud92WMyJdOnzR5Uc5WKTJP4E7qDA3uvvi7bG_CtJWauB3ISdfoB2YpyfvVf"/></div>
 <!-- Desktop Links -->
 <div class="hidden md:flex gap-8 items-center">
 <a class="nav-link text-secondary hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="/">Início</a>
@@ -46,7 +47,7 @@
                         Combinamos precisão técnica com mais de 40 anos de expertise na fabricação sob medida de molas e artefatos de arame para diversos setores industriais.
                     </p>
 <div class="flex gap-4">
-<button class="bg-primary text-on-primary px-8 py-3 rounded-lg font-button text-button flex items-center gap-2 hover:bg-on-primary-fixed-variant transition-all">
+<button class="btn-premium bg-primary text-on-primary px-8 py-3 rounded-lg font-button text-button flex items-center gap-2 hover:bg-on-primary-fixed-variant transition-all">
                             Consultar Catálogo <span class="material-symbols-outlined text-sm">download</span>
 </button>
 </div>
@@ -257,53 +258,39 @@
 </div>
 </section>
 </main>
-<!-- Footer -->
-<footer class="bg-surface-container-lowest border-t border-outline-variant">
-<div class="w-full py-12 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-gutter">
-<div class="max-w-sm">
-<div class="font-headline-sm text-headline-sm font-bold text-primary mb-4">Darvig Molas</div>
-<p class="text-secondary font-body-md text-body-md mb-6">
-                    Sua parceira de confiança em fabricação de molas e artefatos de arame desde 1984. Qualidade certificada e precisão absoluta.
+    <!-- Footer -->
+    <footer
+        class="bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant dark:border-outline flat no shadows full-width">
+        <div
+            class="w-full py-12 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-gutter">
+            <!-- Brand & Info -->
+            <div class="max-w-sm">
+                <div class="font-headline-sm text-headline-sm font-bold mb-4 flex items-center gap-2 text-on-surface">
+                    <img alt="Darvig Molas Logo"
+                        class="h-8 w-auto object-contain transition-transform duration-300 hover:-translate-y-1"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYju2qf-ePIBKNtcXbsdVcGwGM7w-JTZy0b1nNYBGKsiRR3Ptk11F8CQgGHwNmqs-jTzacwAdqMTVPq3mtF9DObbbNg2wmoXFD2YSWDojgve2ahkkr32w21JLLp5DBDgE8dpynFr2dBIC5RidWt-13bIK-RjI-RmNv286pohUXt6948UydQ74-Uuc12hK7ojDJOSPZJVB9BsQtSl32zZE5AATqnSalHR1NIiZ-z1MW8Rcg3gQWN8Tyd_Dpnc0m0JDsCLNZosRWCE0B" />
+                    Darvig Molas
+                </div>
+                <p class="font-body-md text-body-md text-secondary mb-4 text-sm">
+                    © 2026 Darvig Molas - Fabricação de Molas e Artefatos de Arame.<br />
+                    CNPJ: 57.046.971/0001-90<br />
+                    I.E.: 626.162.918.117
                 </p>
-<div class="flex gap-4">
-<a class="text-secondary hover:text-primary" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
-<a class="text-secondary hover:text-primary" href="#"><span class="material-symbols-outlined">brand_family</span></a>
-</div>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-2 gap-12">
-<div class="flex flex-col gap-3">
-<h4 class="font-label-caps text-label-caps text-on-surface">NAVEGAÇÃO</h4>
-<a class="footer-link-interactive text-on-secondary-container transition-all font-body-md text-body-md" href="/">Início</a>
-<a class="footer-link-interactive text-primary font-bold font-body-md text-body-md" href="#">Produtos</a>
-<a class="footer-link-interactive text-on-secondary-container transition-all font-body-md text-body-md" href="/#sobre">Sobre</a>
-</div>
-<div class="flex flex-col gap-3">
-<h4 class="font-label-caps text-label-caps text-on-surface">SUPORTE</h4>
-<a class="footer-link-interactive text-on-secondary-container transition-all font-body-md text-body-md" href="/index.html#contato">Contato</a>
-<a class="footer-link-interactive text-on-secondary-container transition-all font-body-md text-body-md" href="#">Privacidade</a>
-<a class="footer-link-interactive text-on-secondary-container transition-all font-body-md text-body-md" href="#">Catálogo PDF</a>
-</div>
-</div>
-<div class="flex flex-col gap-3">
-<h4 class="font-label-caps text-label-caps text-on-surface">CONTATO</h4>
-<p class="text-on-secondary-container font-body-md text-body-md flex items-center gap-2">
-<span class="material-symbols-outlined text-sm">phone</span> (11) 4452-4008
-                </p>
-<p class="text-on-secondary-container font-body-md text-body-md flex items-center gap-2">
-<span class="material-symbols-outlined text-sm">mail</span> vendas@darvigmolas.com.br
-                </p>
-<p class="text-on-secondary-container font-body-md text-body-md flex items-center gap-2">
-<span class="material-symbols-outlined text-sm">location_on</span> São Paulo, SP
-                </p>
-</div>
-</div>
-<div class="border-t border-outline-variant py-6">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center md:text-left">
-<p class="text-secondary text-[12px]">
-                    © 2026 Darvig Molas - Fabricação de Molas e Artefatos de Arame. CNPJ: 57.046.971/0001-90
-                </p>
-</div>
-</div>
-</footer>
+            </div>
+            <!-- Links -->
+            <div class="flex flex-wrap gap-x-8 gap-y-4">
+                <a class="footer-link-interactive text-on-secondary-container dark:text-secondary-fixed-dim transition-all focus:ring-2 focus:ring-primary font-button text-button"
+                    href="/">Início</a>
+                <a class="footer-link-interactive text-on-secondary-container dark:text-secondary-fixed-dim transition-all focus:ring-2 focus:ring-primary font-button text-button"
+                    href="/produtos">Produtos</a>
+                <a class="footer-link-interactive text-on-secondary-container dark:text-secondary-fixed-dim transition-all focus:ring-2 focus:ring-primary font-button text-button"
+                    href="/#sobre">Sobre</a>
+                <a class="footer-link-interactive text-on-secondary-container dark:text-secondary-fixed-dim transition-all focus:ring-2 focus:ring-primary font-button text-button"
+                    href="/index.html#contato">Contato</a>
+                <a class="footer-link-interactive text-on-secondary-container dark:text-secondary-fixed-dim transition-all focus:ring-2 focus:ring-primary font-button text-button"
+                    href="/painel">Entrar</a>
+            </div>
+        </div>
+    </footer>
 <script src="assets/js/produtos.js"></script>
 </body></html>
